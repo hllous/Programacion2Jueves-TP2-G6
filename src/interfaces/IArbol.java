@@ -1,5 +1,5 @@
 package interfaces;
 
-public interface IArbol {
+public interface IArbol<T> {
 
 }
