@@ -2,6 +2,7 @@ package interfaces;
 
 public interface IArbol<T> {
 
+
     /// Comentario para el profe:
     /// No sabemos que poner en los axiomas, quisimos hacerlos para ir practicando pero no se nos
     /// ocurre una manera de usarlos bien.
