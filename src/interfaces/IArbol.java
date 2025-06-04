@@ -1,6 +1,8 @@
 package interfaces;
 
-public interface IArbol<T> {
+import models.Persona;
+
+public interface IArbol {
     /// Comentario para el profe:
     /// No sabemos que poner en los axiomas, quisimos hacerlos para ir practicando pero no se nos
     /// ocurre una manera de usarlos bien.
@@ -8,17 +10,22 @@ public interface IArbol<T> {
     /// Pre: El dato no debe ser null
     /// Post: Ingresa el dato al arbol
     /// Axi: ---
-    void insertar(T dato);
+    void insertar(Persona dato);
 
     /// Pre: El dato no debe ser null
     /// Post: Se elimina el nodo con ese dato
     /// Axi: ---
-    void eliminar(T dato);
+    void eliminar(Persona dato);
 
     /// Pre: El dato no debe ser null
     /// Post: Devuelve el nodo donde esta el dato
     /// Axi: ---
-    INodo buscar(T dato);
+    Persona buscarPorDni(int dato);
+
+    /// Pre: El dato no debe ser null
+    /// Post: Devuelve el nodo donde esta el dato
+    /// Axi: ---
+    Persona buscarPorNombre(String nombre);
 
     /// Pre: Tiene que existir al menos un nodo
     /// Post: Imprime el arbol en preOrder
