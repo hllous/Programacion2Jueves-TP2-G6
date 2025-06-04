@@ -194,7 +194,7 @@ public class Arbol implements IArbol {
     private INodo<Persona> balancear(INodo<Persona> nodo) {
         int balance = balanceFactor(nodo);
 
-        // Izquierda pesada
+        // Izquierda
         if (balance > 1) {
             if (balanceFactor(nodo.getHijoIzquierdo()) < 0) {
                 nodo.setHijoIzquierdo(rotarIzquierda(nodo.getHijoIzquierdo()));
@@ -202,7 +202,7 @@ public class Arbol implements IArbol {
             return rotarDerecha(nodo);
         }
 
-        // Derecha pesada
+        // Derecha
         if (balance < -1) {
             if (balanceFactor(nodo.getHijoDerecho()) > 0) {
                 nodo.setHijoDerecho(rotarDerecha(nodo.getHijoDerecho()));
