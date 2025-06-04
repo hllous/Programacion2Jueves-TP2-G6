@@ -14,9 +14,7 @@ public class Nodo<T> implements INodo<T> {
         this.hijoDerecho =null;
     }
 
-    public T getDato() {
-        return dato;
-    }
+    public T getDato() { return dato; }
 
     public void setDato(T dato) { this.dato = dato; }
 
@@ -24,11 +22,7 @@ public class Nodo<T> implements INodo<T> {
 
     public void setHijoIzquierdo(INodo<T> hijoIzquierdo) { this.hijoIzquierdo = hijoIzquierdo; }
 
-    public INodo<T> getHijoDerecho() {
-        return hijoDerecho;
-    }
+    public INodo<T> getHijoDerecho() { return hijoDerecho; }
 
-    public void setHijoDerecho(INodo<T> hijoDerecho) {
-        this.hijoDerecho = hijoDerecho;
-    }
+    public void setHijoDerecho(INodo<T> hijoDerecho) { this.hijoDerecho = hijoDerecho; }
 }
