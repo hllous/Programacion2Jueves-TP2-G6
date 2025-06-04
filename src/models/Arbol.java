@@ -29,7 +29,7 @@ public class Arbol implements IArbol {
             return actual;
         }
 
-        return balancear(actual); // devolvés el nodo actualizado y balanceado
+        return balancear(actual);
     }
 
     // Metodos eliminar
