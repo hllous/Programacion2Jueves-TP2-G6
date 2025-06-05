@@ -7,6 +7,10 @@ public class Arbol implements IArbol {
 
     private INodo<Persona> raiz;
 
+    // Comentario para el profe:
+    // Quisimos hacer el arbol de manera generica, pero no pudimos/no supimos hacerlo,
+    // ya que al no saber el tipo de dato de antemano que se ingresa, no podemos ingresar las personas de manera ordenada por dni
+
     // Metodos insertar recursivo
 
     @Override
